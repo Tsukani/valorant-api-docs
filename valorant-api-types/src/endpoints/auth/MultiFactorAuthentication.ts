@@ -13,7 +13,9 @@ export const multiFactorAuthenticationEndpoint = {
     ]),
     body: z.object({
         type: z.literal('multifactor'),
-        code: z.string().describe('The multi-factor authentication code'),
-        rememberDevice: z.boolean()
+        multifactor: z.object({
+            otp: z.string().describe('The multi-factor authentication code'),
+            rememberDevice: z.boolean()
+        })
     })
 } as const satisfies ValorantEndpoint
