@@ -230,9 +230,9 @@ if(endpoint.riotRequirements !== undefined) {
 
         {headerToHtml.size > 0 && <>
             <h3 class="text-lg font-semibold my-2">Headers:</h3>
-            <ul class="list-disc list-inside">
+            <ul class="list-disc list-inside space-y-1">
                 {Array.from(headerToHtml).map(([header, value]) => {
-                    return <li>
+                    return <li class="pl-2">
                         <SimpleCode set:html={`${header}: ${value}`}/>
                     </li>
                 })}
@@ -241,7 +241,7 @@ if(endpoint.riotRequirements !== undefined) {
 
         {urlParameters.length > 0 && <>
             <h3 class="text-lg font-semibold my-2">URL Parameters:</h3>
-            <ul class="list-disc list-inside">
+            <ul class="list-disc list-inside space-y-2">
                 {urlParameters.map(variable => {
                     const meta = variablesToReplace.get(variable)!
 
@@ -268,7 +268,7 @@ if(endpoint.riotRequirements !== undefined) {
 
         {hasQuery && <>
             <h3 class="text-lg font-semibold my-2">Query Parameters:</h3>
-            <ul class="list-disc list-inside">
+            <ul class="list-disc list-inside space-y-2">
                 {Array.from(endpoint.query!.entries()).map(([name, type]) => {
                     return <li id={getSlug(name)} class="target:border-l-2 pl-2 border-emerald-700 dark:border-orange-500">
                         <SimpleCode>{name}</SimpleCode>
@@ -281,7 +281,7 @@ if(endpoint.riotRequirements !== undefined) {
 
         {otherVariables.length > 0 && <>
             <h3 class="text-lg font-semibold my-2">Other Variables:</h3>
-            <ul class="list-disc list-inside">
+            <ul class="list-disc list-inside space-y-2">
                 {otherVariables.map(variableName => {
                     const variable = variablesToReplace.get(variableName)!
 
