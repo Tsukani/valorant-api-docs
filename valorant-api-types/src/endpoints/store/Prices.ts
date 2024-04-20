@@ -8,7 +8,7 @@ export const pricesEndpoint = {
     queryName: 'Store_GetOffers',
     category: 'Store Endpoints',
     type: 'pd',
-    suffix: 'store/v1/offers',
+    suffix: 'store/v1/offers/',
     riotRequirements: {
         token: true,
         entitlement: true
