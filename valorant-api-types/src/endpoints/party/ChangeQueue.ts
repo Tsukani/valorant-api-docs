@@ -12,7 +12,9 @@ export const changeQueueEndpoint = {
     suffix: 'parties/v1/parties/{party id}/queue',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     body: z.object({
         queueId: queueIDSchema

@@ -10,6 +10,8 @@ export const customGameConfigsEndpoint = {
     type: 'glz',
     suffix: 'parties/v1/parties/customgameconfigs',
     riotRequirements: {
+        token: true,
+        entitlement: true,
         clientPlatform: true,
         clientVersion: true
     },

@@ -17,7 +17,9 @@ export const itemUpgradesEndpoint = {
     suffix: 'contract-definitions/v3/item-upgrades',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '200': z.object({

@@ -11,7 +11,9 @@ export const pregameQuitEndpoint = {
     suffix: 'pregame/v1/matches/{pre-game match id}/quit',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '204': z.undefined()

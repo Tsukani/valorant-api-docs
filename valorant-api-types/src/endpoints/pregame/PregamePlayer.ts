@@ -11,7 +11,9 @@ export const pregamePlayerEndpoint = {
     suffix: 'pregame/v1/players/{puuid}',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '200': z.object({

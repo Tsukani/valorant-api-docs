@@ -15,7 +15,9 @@ export const partyJoinByCodeEndpoint = {
     ]),
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '200': partyPlayerSchema,

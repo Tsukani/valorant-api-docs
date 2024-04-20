@@ -63,7 +63,9 @@ export const matchDetailsEndpoint = {
     ]),
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientVersion: true,
+        clientPlatform: true
     },
     responses: {
         '200': z.object({

@@ -10,7 +10,9 @@ export const partyChatTokenEndpoint = {
     suffix: '/parties/v1/parties/{party id}/muctoken',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '200': z.object({

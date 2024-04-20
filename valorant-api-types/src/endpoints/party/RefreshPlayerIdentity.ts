@@ -13,7 +13,8 @@ export const refreshPlayerIdentityEndpoint = {
     riotRequirements: {
         token: true,
         entitlement: true,
-        clientVersion: true
+        clientVersion: true,
+        clientPlatform: true
     },
     responses: {
         '200': partySchema

@@ -20,6 +20,7 @@ export const leaderboardEndpoint = {
     riotRequirements: {
         token: true,
         entitlement: true,
+        clientPlatform: true,
         clientVersion: true
     },
     responses: {

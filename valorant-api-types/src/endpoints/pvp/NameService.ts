@@ -12,7 +12,9 @@ export const nameServiceEndpoint = {
     suffix: 'name-service/v2/players',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientVersion: true,
+        clientPlatform: true
     },
     responses: {
         '200': z.array(z.object({

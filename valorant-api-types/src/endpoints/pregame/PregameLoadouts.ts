@@ -18,7 +18,9 @@ export const pregameLoadoutsEndpoint = {
     suffix: 'pregame/v1/matches/{pre-game match id}/loadouts',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '200': z.object({

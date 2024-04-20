@@ -12,7 +12,9 @@ export const setPartyAccessibilityEndpoint = {
     suffix: 'parties/v1/parties/{party id}/accessibility',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     body: z.object({
         accessibility: z.enum(['OPEN', 'CLOSED'])

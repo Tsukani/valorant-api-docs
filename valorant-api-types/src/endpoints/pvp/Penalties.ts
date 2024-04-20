@@ -12,7 +12,8 @@ export const penaltiesEndpoint = {
     riotRequirements: {
         token: true,
         entitlement: true,
-        clientPlatform: true
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '200': z.object({

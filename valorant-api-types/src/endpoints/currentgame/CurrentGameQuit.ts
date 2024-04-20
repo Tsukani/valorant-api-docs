@@ -11,7 +11,9 @@ export const currentGameQuitEndpoint = {
     suffix: 'core-game/v1/players/{puuid}/disassociate/{current game match id}',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '204': z.undefined()

@@ -11,7 +11,9 @@ export const partyEndpoint = {
     suffix: 'parties/v1/parties/{party id}',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '200': partySchema

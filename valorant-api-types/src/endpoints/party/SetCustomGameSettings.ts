@@ -13,7 +13,8 @@ export const setCustomGameSettingsEndpoint = {
     riotRequirements: {
         token: true,
         entitlement: true,
-        clientVersion: true
+        clientVersion: true,
+        clientPlatform: true
     },
     body: z.object({
         Map: mapIDSchema,

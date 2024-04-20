@@ -16,7 +16,8 @@ export const activateContractEndpoint = {
     riotRequirements: {
         token: true,
         entitlement: true,
-        clientVersion: true
+        clientVersion: true,
+        clientPlatform: true
     },
     responses: {
         '200': contractsResponse

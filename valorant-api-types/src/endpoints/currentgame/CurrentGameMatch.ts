@@ -19,7 +19,9 @@ export const currentGameMatchEndpoint = {
     suffix: 'core-game/v1/matches/{current game match id}',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '200': z.object({

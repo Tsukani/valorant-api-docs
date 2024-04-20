@@ -11,7 +11,9 @@ export const partyRemovePlayerEndpoint = {
     method: 'DELETE',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientVersion: true,
+        clientPlatform: true
     },
     responses: {
         '204': z.undefined()

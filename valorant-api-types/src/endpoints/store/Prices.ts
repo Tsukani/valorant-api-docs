@@ -11,7 +11,9 @@ export const pricesEndpoint = {
     suffix: 'store/v1/offers/',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '200': z.object({

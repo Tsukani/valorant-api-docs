@@ -12,7 +12,9 @@ export const leaveMatchmakingQueueEndpoint = {
     suffix: 'parties/v1/parties/{party id}/matchmaking/leave',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '200': partySchema

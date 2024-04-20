@@ -12,7 +12,9 @@ export const enterMatchmakingQueueEndpoint = {
     suffix: 'parties/v1/parties/{party id}/matchmaking/join',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '200': partySchema

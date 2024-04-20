@@ -10,7 +10,9 @@ export const partyVoiceTokenEndpoint = {
     suffix: '/parties/v1/parties/{party id}/voicetoken',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '200': z.object({

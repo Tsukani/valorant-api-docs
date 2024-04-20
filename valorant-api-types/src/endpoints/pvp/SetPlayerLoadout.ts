@@ -13,7 +13,9 @@ export const setPlayerLoadoutEndpoint = {
     suffix: 'personalization/v2/players/{puuid}/playerloadout',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '200': z.object({

@@ -10,7 +10,9 @@ export const walletEndpoint = {
     suffix: 'store/v1/wallet/{puuid}',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '200': z.object({

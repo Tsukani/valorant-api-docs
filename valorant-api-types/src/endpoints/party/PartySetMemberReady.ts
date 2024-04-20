@@ -12,7 +12,9 @@ export const partySetMemberReadyEndpoint = {
     method: 'POST',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     body: z.object({
         ready: z.boolean().describe("Ready Status")

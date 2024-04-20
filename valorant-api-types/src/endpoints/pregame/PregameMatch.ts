@@ -11,7 +11,9 @@ export const pregameMatchEndpoint = {
     suffix: 'pregame/v1/matches/{pre-game match id}',
     riotRequirements: {
         token: true,
-        entitlement: true
+        entitlement: true,
+        clientPlatform: true,
+        clientVersion: true
     },
     responses: {
         '200': pregameMatchSchema
