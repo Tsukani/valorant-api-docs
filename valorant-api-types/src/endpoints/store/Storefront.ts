@@ -42,16 +42,18 @@ const bonusOfferSchema = z.object({
 export const storefrontEndpoint = {
     name: 'Storefront',
     description: 'Get the currently available items in the store',
-    queryName: 'Store_GetStorefrontV2',
+    queryName: 'Store_GetStorefrontV3',
     category: 'Store Endpoints',
     type: 'pd',
-    suffix: 'store/v2/storefront/{puuid}',
+    method: 'POST',
+    suffix: 'store/v3/storefront/{puuid}',
     riotRequirements: {
         token: true,
         entitlement: true,
         clientPlatform: true,
         clientVersion: true
     },
+    body: z.object({}),
     responses: {
         '200': z.object({
             FeaturedBundle: z.object({
